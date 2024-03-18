@@ -45,12 +45,14 @@
                     <strong>Calories Burned</strong>
                 </div>
                 <div class="right-cd2">
-                    <h2 id="cal-consumed">1600</h2>
+                    <h2 id="cal-remaining">1600</h2>
                     <strong>Calories Remaining</strong>
                 </div>
             </div>
             <div id="cd3">
-                <div id="progress-bar"></div>
+                <div id="progress-bar">
+                    <div class="progress-stats"></div>
+                </div>
             </div>
         </div>
         <div id="filter">
@@ -65,21 +67,21 @@
                         <button id="show-meal-form">+ Add Meal</button>
                     </div>
                     <form>
-                        <input type="text" placeholder="Enter Meal or Item">
-                        <input type="number" placeholder="Enter Calories">
+                        <input id="name" type="text" placeholder="Enter Meal or Item">
+                        <input id="calorie"  type="number" placeholder="Enter Calories">
                         <button id="add-meal">Add Meal Item</button>
                     </form>
                     <ul>
-                        <li>
+                        <li id="meal-li" class="card">
                             <p id="item">Breakfast</p>
                             <strong id="calorie">350</strong>
                             <div><button id="delete"><i class="ri-close-line"></i></button></div>
                         </li>
-                        <li>
+                        <!-- <li class="card">
                             <p id="item">Lunch</p>
                             <strong id="calorie">620</strong>
                             <div><button id="delete"><i class="ri-close-line"></i></button></div>
-                        </li>
+                        </li>  -->
                     </ul>
                 </div>
             </div>
@@ -90,21 +92,21 @@
                         <button id="show-workout-form">+ Add Workout</button>
                     </div>
                     <form>
-                        <input type="text" placeholder="Enter Workout">
-                        <input type="number" placeholder="Enter Calories">
+                        <input id="name" type="text" placeholder="Enter Workout">
+                        <input id="calorie" type="number" placeholder="Enter Calories">
                         <button id="add-workout">Add Workout Item</button>
                     </form>
                         <ul>
-                            <li>
+                            <!-- <li class="card">
                                 <p id="item">Treadmill 1 Hour</p>
                                 <strong id="calorie">400</strong>
                                 <div><button id="delete"><i class="ri-close-line"></i></button></div>
                             </li>
-                            <li>
+                            <li class="card">
                                 <p id="item">Bike 90 Minutes</p>
                                 <strong id="calorie">500</strong>
                                 <div><button id="delete"><i class="ri-close-line"></i></button></div>
-                            </li>
+                            </li> -->
                         </ul>
                 </div>
             </div>

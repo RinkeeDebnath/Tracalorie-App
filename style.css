@@ -137,6 +137,13 @@ justify-content: space-between;
     width:100%;
     border-radius: 5px;
     height: 20px;
+    overflow: hidden;
+}
+
+#cd3 #progress-bar .progress-stats{
+background: #599F3D;
+width:0px;
+height: 20px;
 }
 
 #filter{
