@@ -1,0 +1,70 @@
+@media (max-width:600px){
+    #navbar{
+        flex-direction: column;
+    }
+    #navbar .logo i{
+        font-size: 2rem;
+    }
+    
+    #navbar .logo h1{
+        font-size: 2rem;
+        letter-spacing: 1px;
+    }
+
+    #navbar .btns button{
+        width:120px;
+        height: 40px;
+        border-radius: 5px;
+        font-size: 1rem;
+    }
+
+    #calorie-details #cd1{
+        flex-direction: column;
+    }
+
+    #calorie-details #cd2{
+        flex-direction: column;
+    }
+
+    .left-cd1, .right-cd1,.left-cd2,.center-cd2, .right-cd2{
+        height: 120px;
+    }
+
+    .left-cd1 h2, .right-cd1 h2,.left-cd2 h2,.center-cd2 h2,.right-cd2 h2{
+        font-size: 1.5rem;
+    }
+
+    .left-cd1 strong, .right-cd1 strong,.left-cd2 strong,.center-cd2 strong,.right-cd2 strong{
+        font-size: 1.4rem;
+    }
+
+    #filter{
+        flex-direction: column;
+    }
+
+    #forms{
+        flex-direction: column;
+    }
+
+    .form-heading h2{
+        font-size: 1.2rem;
+    }
+
+    li p{
+        font-size: 1rem;
+    }
+
+    li strong{
+        font-size: 1.2rem;
+        width:60px;
+    }
+
+    #left-form li button,#right-form li button{
+        height: 25px;
+        width:20px;
+    }
+
+    li button i{
+        font-size: 0.8rem;
+    }
+}
