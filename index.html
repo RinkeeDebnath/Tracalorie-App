@@ -14,90 +14,96 @@
   </head>
   <body>
     <div id="main">
-        <div id="navbar">
-            <div class="logo">
-                <i class="ri-restaurant-fill"></i>
-                <h1>Tracalorie</h1>
-            </div>
-            <div class="btns">
-                <button class="set-limit">Set Daily Limit</button>
-                <button class="reset">Reset Day</button>
-            </div>
+      <div id="navbar">
+        <div class="logo">
+          <i class="ri-restaurant-fill"></i>
+          <h1>Tracalorie</h1>
         </div>
-        <div id="calorie-details">
-            <div id="cd1">
-                <div class="left-cd1">
-                    <h2 id="dly-cal-lmt">2000</h2>
-                    <strong>Daily Calorie Limit</strong>
-                </div>
-                <div class="right-cd1">
-                    <h2 id="gn-loss">400</h2>
-                    <strong>Gain/Loss</strong>
-                </div>
-            </div>
-            <div id="cd2">
-                <div class="left-cd2">
-                    <h2 id="cal-consumed">700</h2>
-                    <strong>Calories Consumed</strong>
-                </div>
-                <div class="center-cd2">
-                    <h2 id="cal-burned">300</h2>
-                    <strong>Calories Burned</strong>
-                </div>
-                <div class="right-cd2">
-                    <h2 id="cal-remaining">1600</h2>
-                    <strong>Calories Remaining</strong>
-                </div>
-            </div>
-            <div id="cd3">
-                <div id="progress-bar">
-                    <div class="progress-stats"></div>
-                </div>
-            </div>
+        <div class="btns">
+          <button class="set-limit">Set Daily Limit</button>
+          <button id="reset" class="reset">Reset Day</button>
         </div>
-        <div id="filter">
-            <input id="filter-meals"  type="text" placeholder="Filter Meals...">
-            <input id="filter-workouts" type="text" placeholder="Workout Meals...">
+      </div>
+      <div id="calorie-details">
+        <div id="cd1">
+          <div class="left-cd1">
+            <h2 id="dly-cal-lmt">2000</h2>
+            <strong>Daily Calorie Limit</strong>
+          </div>
+          <div class="right-cd1">
+            <h2 id="gn-loss">400</h2>
+            <strong>Gain/Loss</strong>
+          </div>
         </div>
-        <div id="forms">
-            <div id="left-form">
-                <div class="meal-form">
-                    <div class="form-heading">
-                        <h2>Meals / Food Items</h2>
-                        <button id="show-meal-form">+ Add Meal</button>
-                    </div>
-                    <form>
-                        <input id="name" type="text" placeholder="Enter Meal or Item">
-                        <input id="calorie"  type="number" placeholder="Enter Calories">
-                        <button id="add-meal">Add Meal Item</button>
-                    </form>
-                    <ul>
-                        <li id="meal-li" class="card">
-                            <p id="item">Breakfast</p>
-                            <strong id="calorie">350</strong>
-                            <div><button id="delete"><i class="ri-close-line"></i></button></div>
-                        </li>
-                        <!-- <li class="card">
-                            <p id="item">Lunch</p>
-                            <strong id="calorie">620</strong>
-                            <div><button id="delete"><i class="ri-close-line"></i></button></div>
-                        </li>  -->
-                    </ul>
-                </div>
+        <div id="cd2">
+          <div class="left-cd2">
+            <h2 id="cal-consumed">700</h2>
+            <strong>Calories Consumed</strong>
+          </div>
+          <div class="center-cd2">
+            <h2 id="cal-burned">300</h2>
+            <strong>Calories Burned</strong>
+          </div>
+          <div class="right-cd2">
+            <h2 id="cal-remaining">1600</h2>
+            <strong>Calories Remaining</strong>
+          </div>
+        </div>
+        <div id="cd3">
+          <div id="progress-bar">
+            <div class="progress-stats"></div>
+          </div>
+        </div>
+      </div>
+      <div id="filter">
+        <input id="filter-meals" type="text" placeholder="Filter Meals..." />
+        <input
+          id="filter-workouts"
+          type="text"
+          placeholder="Workout Meals..."
+        />
+      </div>
+      <div id="forms">
+        <div id="left-form">
+          <div class="meal-form">
+            <div class="form-heading">
+              <h2>Meals / Food Items</h2>
+              <button id="show-meal-form">+ Add Meal</button>
             </div>
-            <div id="right-form">
-                <div class="workout-form">
-                    <div class="form-heading">
-                        <h2>Workouts</h2>
-                        <button id="show-workout-form">+ Add Workout</button>
-                    </div>
-                    <form>
-                        <input id="name" type="text" placeholder="Enter Workout">
-                        <input id="calorie" type="number" placeholder="Enter Calories">
-                        <button id="add-workout">Add Workout Item</button>
-                    </form>
-                        <ul>
-                            <!-- <li class="card">
+            <form>
+              <input id="name" type="text" placeholder="Enter Meal or Item" />
+              <input id="calorie" type="number" placeholder="Enter Calories" />
+              <button id="add-meal">Add Meal Item</button>
+            </form>
+            <ul>
+              <!-- <li id="meal-li" class="card">
+                <p id="item">Breakfast</p>
+                <strong id="calorie">350</strong>
+                <div>
+                  <button
+                    id="delete"
+                    class="delete"
+                    onClick="app._removeItem(event)"
+                  >
+                    <i class="ri-close-line"></i>
+                  </button>
+                </div>
+              </li> -->
+          </div>
+        </div>
+        <div id="right-form">
+          <div class="workout-form">
+            <div class="form-heading">
+              <h2>Workouts</h2>
+              <button id="show-workout-form">+ Add Workout</button>
+            </div>
+            <form>
+              <input id="name" type="text" placeholder="Enter Workout" />
+              <input id="calorie" type="number" placeholder="Enter Calories" />
+              <button id="add-workout">Add Workout Item</button>
+            </form>
+            <ul>
+              <!-- <li class="card">
                                 <p id="item">Treadmill 1 Hour</p>
                                 <strong id="calorie">400</strong>
                                 <div><button id="delete"><i class="ri-close-line"></i></button></div>
@@ -107,23 +113,25 @@
                                 <strong id="calorie">500</strong>
                                 <div><button id="delete"><i class="ri-close-line"></i></button></div>
                             </li> -->
-                        </ul>
-                </div>
-            </div>
+            </ul>
+          </div>
         </div>
-        <div id="modal">
-            <div id="daily-limit-form">
-                <div>
-                    <h2>Set Daily Limit</h2>
-                    <div><button id="close"><i class="ri-close-fill"></i></button></div>
-                </div>
-                <div id="form">
-                    <h3>Daily Calorie Limit</h3>
-                    <input type="text" placeholder="2000">
-                    <button id="save-btn">Save</button>
-                </div>
+      </div>
+      <div id="modal">
+        <div id="daily-limit-form">
+          <div>
+            <h2>Set Daily Limit</h2>
+            <div>
+              <button id="close"><i class="ri-close-fill"></i></button>
             </div>
+          </div>
+          <div id="form">
+            <h3>Daily Calorie Limit</h3>
+            <input type="text" placeholder="2000" />
+            <button id="save-btn">Save</button>
+          </div>
         </div>
+      </div>
     </div>
   </body>
 </html>
